@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCustoViagem.MainPage"
+             Title="Custo de Viagem"
+             >
+
+    <Grid RowSpacing="10" ColumnSpacing="10" Padding="10" BackgroundColor="#EEE">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Origem: "
+               Grid.Row="1" Grid.Column="0"
+               Style="{StaticResource LabelRotulo}"/>
+
+        <Label Text="Destino: "
+               Grid.Row="2" Grid.Column="0"
+               Style="{StaticResource LabelRotulo}"/>
+
+        <Entry x:Name="entOrigem" Placeholder="Nom da Cidade"
+               Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+               Keyboard="Text"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Entry x:Name="entDestino" Placeholder="Nome da Cidade"
+               Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+               Keyboard="Text"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Label Text="Consumo do Carro"
+               Grid.Row="3" Grid.ColumnSpan="3"
+               HorizontalTextAlignment="Center"
+               Style="{StaticResource Titulo}"/>
+
+        <Label Text="Distância: "
+               Grid.Column="0" Grid.Row="4"
+               Style="{StaticResource LabelRotulo}"/>
+
+        <Label x:Name="lblConsumo" Text="Consumo: "
+               Grid.Row="5" Grid.Column="0"
+               Style="{StaticResource LabelRotulo}"/>
+
+        <Label x:Name="lblValorCombustivel" Text="Valor do COmbustível: "
+               Grid.Row="6" Grid.Column="0"
+               FontSize="15"
+               Style="{StaticResource LabelRotulo}"/>
+
+        <Entry x:Name="entDistancia" Placeholder="Km"
+               Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Entry x:Name="entConsumo" Placeholder="Km/1"
+               Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Entry x:Name="entValorConsumo" Placeholder="R$ 0.0"
+               Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Label x:Name="lblTitulo3" Text="Pedágio"
+               Grid.Row="7" Grid.ColumnSpan="3"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand"
+               Style="{StaticResource Titulo}"/>
+
+        <Label Text="Valor: "
+               Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"
+               Style="{StaticResource LabelRotulo}"/>
+        
+        
+        
+        
+
+    </Grid>
+
+</ContentPage>
